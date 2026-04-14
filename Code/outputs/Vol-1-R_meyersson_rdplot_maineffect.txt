@@ -1,0 +1,28 @@
+txt> bandwidth = rdrobust(Y, X, kernel = "triangular", p = 1, bwselect = "mserd")$bws[1, 
+txt+ 1]
+txt> out = rdplot(Y[abs(X) <= bandwidth], X[abs(X) <= bandwidth], 
+txt+ p = 1, kernel = "triangular")
+txt> summary(out)
+Call: rdplot
+
+Number of Obs.                  795
+Kernel                   Triangular
+
+Number of Obs.                  529             266
+Eff. Number of Obs.             528             265
+Order poly. fit (p)               1               1
+BW poly. fit (h)             17.225          17.048
+Number of bins scale              1               1
+
+Bins Selected                    19              17
+Average Bin Length            0.907           1.003
+Median Bin Length             0.907           1.003
+
+IMSE-optimal bins                 5               3
+Mimicking Variance bins          19              17
+
+Relative to IMSE-optimal:
+Implied scale                 3.800           5.667
+WIMSE variance weight         0.018           0.005
+WIMSE bias weight             0.982           0.995
+

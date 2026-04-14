@@ -1,0 +1,26 @@
+txt> T_X = X * T
+txt> out = lm(Y[X >= -20 & X <= 20] ~ X[X >= -20 & X <= 20] + T[X >= 
+txt+ -20 & X <= 20] + T_X[X >= -20 & X <= 20])
+txt> summary(out)
+
+Call:
+lm(formula = Y[X >= -20 & X <= 20] ~ X[X >= -20 & X <= 20] + 
+    T[X >= -20 & X <= 20] + T_X[X >= -20 & X <= 20])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-17.373  -7.718  -0.755   6.384  33.697 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)             12.62254    0.77459  16.296  < 2e-16 ***
+X[X >= -20 & X <= 20]   -0.24807    0.06723  -3.690 0.000238 ***
+T[X >= -20 & X <= 20]    2.92708    1.23529   2.370 0.018024 *  
+T_X[X >= -20 & X <= 20]  0.12612    0.12459   1.012 0.311667    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 9.316 on 884 degrees of freedom
+Multiple R-squared:  0.01721,	Adjusted R-squared:  0.01387 
+F-statistic: 5.159 on 3 and 884 DF,  p-value: 0.00154
+

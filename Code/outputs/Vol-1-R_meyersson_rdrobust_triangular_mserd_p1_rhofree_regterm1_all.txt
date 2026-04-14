@@ -1,0 +1,26 @@
+> out = rdrobust(Y, X, kernel = "triangular", p = 1, bwselect = "mserd", 
++ all = TRUE)
+> summary(out)
+Sharp RD estimates using local polynomial regression.
+
+Number of Obs.                 2629
+BW type                       mserd
+Kernel                   Triangular
+VCE method                       NN
+
+Number of Obs.                 2314          315
+Eff. Number of Obs.             529          266
+Order est. (p)                    1            1
+Order bias  (q)                   2            2
+BW est. (h)                  17.240       17.240
+BW bias (b)                  28.576       28.576
+rho (h/b)                     0.603        0.603
+Unique Obs.                    2311          315
+
+=======================================================================================
+        Method     Coef. Std. Err.         z     P>|z|      [ 95% C.I. ]       
+=======================================================================================
+  Conventional     3.020     1.427     2.116     0.034     [0.223 , 5.816]     
+Bias-Corrected     2.983     1.427     2.090     0.037     [0.186 , 5.780]     
+        Robust     2.983     1.680     1.776     0.076    [-0.309 , 6.276]     
+=======================================================================================

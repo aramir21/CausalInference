@@ -1,0 +1,25 @@
+> Z = cbind(data$vshr_islam1994, data$partycount, data$lpop1994, 
++ data$merkezi, data$merkezp, data$subbuyuk, data$buyuk)
+> colnames(Z) = c("vshr_islam1994", "partycount", "lpop1994", "merkezi", 
++ "merkezp", "subbuyuk", "buyuk")
+> out = rdbwselect(Y, X, covs = Z, kernel = "triangular", scaleregul = 1, 
++ p = 1, bwselect = "mserd")
+> summary(out)
+Call: rdbwselect
+
+Number of Obs.                 2629
+BW type                       mserd
+Kernel                   Triangular
+VCE method                       NN
+
+Number of Obs.                 2314          315
+Order est. (p)                    1            1
+Order bias  (q)                   2            2
+Unique Obs.                    2311          315
+
+=======================================================
+                  BW est. (h)    BW bias (b)
+            Left of c Right of c  Left of c Right of c
+=======================================================
+     mserd    14.410     14.410     23.733     23.733
+=======================================================

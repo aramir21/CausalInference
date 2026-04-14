@@ -1,0 +1,25 @@
+> out = rdrobust(Y, X, kernel = "triangular", scaleregul = 1, p = 1, 
++ bwselect = "mserd", cluster = data$prov_num)
+> summary(out)
+Sharp RD estimates using local polynomial regression.
+
+Number of Obs.                 2629
+BW type                       mserd
+Kernel                   Triangular
+VCE method                       NN
+
+Number of Obs.                 2314          315
+Eff. Number of Obs.             584          277
+Order est. (p)                    1            1
+Order bias  (q)                   2            2
+BW est. (h)                  19.036       19.036
+BW bias (b)                  29.875       29.875
+rho (h/b)                     0.637        0.637
+Unique Obs.                    2311          315
+
+=====================================================================
+                   Point    Robust Inference
+                Estimate         z     P>|z|      [ 95% C.I. ]       
+---------------------------------------------------------------------
+     RD Effect     2.969     1.635     0.102    [-0.583 , 6.460]     
+=====================================================================

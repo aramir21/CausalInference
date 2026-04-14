@@ -1,0 +1,26 @@
+txt> out = rdplot(Y, X, nbins = c(20, 20), binselect = "qs", x.lim = c(-100, 
+txt+ 100), y.lim = c(0, 25))
+txt> summary(out)
+Call: rdplot
+
+Number of Obs.                 2629
+Kernel                      Uniform
+
+Number of Obs.                 2314             315
+Eff. Number of Obs.            2314             315
+Order poly. fit (p)               4               4
+BW poly. fit (h)            100.000          99.051
+Number of bins scale              1               1
+
+Bins Selected                    20              20
+Average Bin Length            4.995           4.950
+Median Bin Length             2.950           1.011
+
+IMSE-optimal bins                21              14
+Mimicking Variance bins          44              41
+
+Relative to IMSE-optimal:
+Implied scale                 0.952           1.429
+WIMSE variance weight         0.537           0.255
+WIMSE bias weight             0.463           0.745
+

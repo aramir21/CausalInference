@@ -1,0 +1,2 @@
+txt> plot(X, Y, xlab = "Score", ylab = "Outcome", col = 1, pch = 20)
+txt> abline(v = 0)

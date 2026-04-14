@@ -1,0 +1,13 @@
+txt> out = lm(Y[X < 0 & X >= -20] ~ X[X < 0 & X >= -20])
+txt> left_intercept = out$coefficients[1]
+txt> print(left_intercept)
+(Intercept) 
+   12.62254 
+txt> out = lm(Y[X >= 0 & X <= 20] ~ X[X >= 0 & X <= 20])
+txt> right_intercept = out$coefficients[1]
+txt> print(right_intercept)
+(Intercept) 
+   15.54961 
+txt> difference = right_intercept - left_intercept
+txt> print(paste("The RD estimator is", difference, sep = " "))
+[1] "The RD estimator is 2.92707507543107"

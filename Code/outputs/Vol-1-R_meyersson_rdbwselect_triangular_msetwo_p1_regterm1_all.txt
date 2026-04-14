@@ -1,0 +1,20 @@
+txt> out = rdbwselect(Y, X, kernel = "triangular", p = 1, bwselect = "msetwo")
+txt> summary(out)
+Call: rdbwselect
+
+Number of Obs.                 2629
+BW type                      msetwo
+Kernel                   Triangular
+VCE method                       NN
+
+Number of Obs.                 2314          315
+Order est. (p)                    1            1
+Order bias  (q)                   2            2
+Unique Obs.                    2311          315
+
+=======================================================
+                  BW est. (h)    BW bias (b)
+            Left of c Right of c  Left of c Right of c
+=======================================================
+    msetwo    19.967     17.360     32.279     29.729
+=======================================================

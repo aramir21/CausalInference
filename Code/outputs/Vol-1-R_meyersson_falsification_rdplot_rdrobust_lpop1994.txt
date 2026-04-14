@@ -1,0 +1,5 @@
+> bandwidth = rdrobust(data$lpop1994, X)$bws[1, 1]
+> xlim = ceiling(bandwidth)
+> rdplot(data$lpop1994[abs(X) <= bandwidth], X[abs(X) <= bandwidth], 
++ p = 1, kernel = "triangular", x.lim = c(-xlim, xlim), x.label = "Score", 
++ y.label = "", title = "")

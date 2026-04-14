@@ -1,0 +1,7 @@
+txt> out = lm(Y[X < 0] ~ X[X < 0], weights = w[X < 0])
+txt> left_intercept = out$coefficients[1]
+txt> out = lm(Y[X >= 0] ~ X[X >= 0], weights = w[X >= 0])
+txt> right_intercept = out$coefficients[1]
+txt> difference = right_intercept - left_intercept
+txt> print(paste("The RD estimator is", difference, sep = " "))
+[1] "The RD estimator is 2.9373187307871"

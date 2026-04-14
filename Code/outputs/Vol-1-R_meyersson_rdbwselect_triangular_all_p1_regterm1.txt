@@ -1,0 +1,29 @@
+> out = rdbwselect(Y, X, kernel = "triangular", p = 1, all = TRUE)
+> summary(out)
+Call: rdbwselect
+
+Number of Obs.                 2629
+BW type                         All
+Kernel                   Triangular
+VCE method                       NN
+
+Number of Obs.                 2314          315
+Order est. (p)                    1            1
+Order bias  (q)                   2            2
+Unique Obs.                    2311          315
+
+=======================================================
+                  BW est. (h)    BW bias (b)
+            Left of c Right of c  Left of c Right of c
+=======================================================
+     mserd    17.240     17.240     28.576     28.576
+    msetwo    19.967     17.360     32.279     29.729
+    msesum    17.772     17.772     30.154     30.154
+  msecomb1    17.240     17.240     28.576     28.576
+  msecomb2    17.772     17.360     30.154     29.729
+     cerrd    11.629     11.629     28.576     28.576
+    certwo    13.469     11.710     32.279     29.729
+    cersum    11.988     11.988     30.154     30.154
+  cercomb1    11.629     11.629     28.576     28.576
+  cercomb2    11.988     11.710     30.154     29.729
+=======================================================

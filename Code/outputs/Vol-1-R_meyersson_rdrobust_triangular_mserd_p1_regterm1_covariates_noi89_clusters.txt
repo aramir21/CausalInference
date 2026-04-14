@@ -1,0 +1,29 @@
+> Z = cbind(data$vshr_islam1994, data$partycount, data$lpop1994, 
++ data$merkezi, data$merkezp, data$subbuyuk, data$buyuk)
+> colnames(Z) = c("vshr_islam1994", "partycount", "lpop1994", "merkezi", 
++ "merkezp", "subbuyuk", "buyuk")
+> out = rdrobust(Y, X, covs = Z, kernel = "triangular", scaleregul = 1, 
++ p = 1, bwselect = "mserd", cluster = data$prov_num)
+> summary(out)
+Covariate-adjusted Sharp RD estimates using local polynomial regression.
+
+Number of Obs.                 2629
+BW type                       mserd
+Kernel                   Triangular
+VCE method                       NN
+
+Number of Obs.                 2314          315
+Eff. Number of Obs.             481          254
+Order est. (p)                    1            1
+Order bias  (q)                   2            2
+BW est. (h)                  15.677       15.677
+BW bias (b)                  24.667       24.667
+rho (h/b)                     0.636        0.636
+Unique Obs.                    2311          315
+
+=====================================================================
+                   Point    Robust Inference
+                Estimate         z     P>|z|      [ 95% C.I. ]       
+---------------------------------------------------------------------
+     RD Effect     3.146     2.121     0.034     [0.243 , 6.154]     
+=====================================================================

@@ -1,0 +1,13 @@
+> binom.test(53, 100, 1/2)
+
+	Exact binomial test
+
+data:  53 and 100
+number of successes = 53, number of trials = 100, p-value = 0.6173
+alternative hypothesis: true probability of success is not equal to 0.5
+95 percent confidence interval:
+ 0.4275815 0.6305948
+sample estimates:
+probability of success 
+                  0.53 
+

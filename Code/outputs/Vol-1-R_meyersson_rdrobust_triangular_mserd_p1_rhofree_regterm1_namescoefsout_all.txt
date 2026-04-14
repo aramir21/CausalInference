@@ -1,0 +1,13 @@
+txt> rdout = rdrobust(Y, X, kernel = "triangular", p = 1, bwselect = "mserd")
+txt> print(names(rdout)[1:7])
+[1] "Estimate" "bws"      "coef"     "se"       "z"        "pv"       "ci"      
+txt> print(names(rdout)[8:15])
+[1] "beta_Y_p_l" "beta_Y_p_r" "V_cl_l"     "V_cl_r"     "V_rb_l"     "V_rb_r"     "N"          "N_h"       
+txt> print(names(rdout)[16:23])
+[1] "N_b"    "M"      "tau_cl" "tau_bc" "c"      "p"      "q"      "bias"  
+txt> print(names(rdout)[24:27])
+[1] "kernel" "detail" "all"    "vce"   
+txt> print(rdout$beta_p_r)
+NULL
+txt> print(rdout$beta_p_l)
+NULL

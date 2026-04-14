@@ -1,0 +1,24 @@
+> out = rdrobust(data$lpop1994, X)
+> summary(out)
+Sharp RD estimates using local polynomial regression.
+
+Number of Obs.                 2629
+BW type                       mserd
+Kernel                   Triangular
+VCE method                       NN
+
+Number of Obs.                 2314          315
+Eff. Number of Obs.             400          233
+Order est. (p)                    1            1
+Order bias  (q)                   2            2
+BW est. (h)                  13.320       13.320
+BW bias (b)                  21.368       21.368
+rho (h/b)                     0.623        0.623
+Unique Obs.                    2311          315
+
+=====================================================================
+                   Point    Robust Inference
+                Estimate         z     P>|z|      [ 95% C.I. ]       
+---------------------------------------------------------------------
+     RD Effect     0.012     0.001     0.999    [-0.644 , 0.645]     
+=====================================================================

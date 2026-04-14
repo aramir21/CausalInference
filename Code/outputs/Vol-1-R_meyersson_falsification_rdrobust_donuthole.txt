@@ -1,0 +1,24 @@
+> out = rdrobust(Y[abs(X) >= 0.3], X[abs(X) >= 0.3])
+> summary(out)
+Sharp RD estimates using local polynomial regression.
+
+Number of Obs.                 2616
+BW type                       mserd
+Kernel                   Triangular
+VCE method                       NN
+
+Number of Obs.                 2307          309
+Eff. Number of Obs.             482          248
+Order est. (p)                    1            1
+Order bias  (q)                   2            2
+BW est. (h)                  16.043       16.043
+BW bias (b)                  27.520       27.520
+rho (h/b)                     0.583        0.583
+Unique Obs.                    2304          309
+
+=====================================================================
+                   Point    Robust Inference
+                Estimate         z     P>|z|      [ 95% C.I. ]       
+---------------------------------------------------------------------
+     RD Effect     3.414     1.923     0.054    [-0.067 , 6.965]     
+=====================================================================
