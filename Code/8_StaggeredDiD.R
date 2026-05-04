@@ -2,7 +2,7 @@ library(did)
 library(ggplot2)
 
 data(mpdta)
-set.seed(9152024)
+set.seed(123)
 
 out1 <- att_gt(
   yname   = "lemp",

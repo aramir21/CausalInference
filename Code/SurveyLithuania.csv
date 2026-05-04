@@ -1,0 +1,181 @@
+﻿variables_names,variables_codes,variables_variants_descriptions,objectid,variables_descriptions
+PB030,,,1,Personal ID
+HB030,,,2,Household ID
+RB050,,,3,Personal cross-sectional weight
+AGE,,,4,"Age, turn 2022-12-31"
+RB090,1,Male,5,Sex
+,2,Female,6,
+RB220,,,7,Father ID
+RB230,,,8,Mother ID
+RB240,,,9,Spouse/partner ID
+RL010,0-99,Number of hours of education during a typical week,10,Education at pre-school
+RL020,0-99,Number of hours of education during a typical week,11,Education at compulsory school
+RL030,0-99,Number of hours of education during a typical week,12,Childcare at centre-based services
+RL040,0-99,Number of hours of education during a typical week,13,Childcare at day-care centre
+RL050,0-99,Number of hours of education during a typical week,14,Childcare by a professional child-minder at child's home or at child-minder’s home
+RL060,0-99,Number of hours of education during a typical week,15,"Childcare by grand-parents, others household members (outside parents), other relatives, friends or neighbours"
+PB190,1,Never married,16,Marital status
+,2,Married,17,
+,3,Separated,18,
+,4,Widowed,19,
+,5,Divorced,20,
+PB200,1,"Yes, on a legal basis",21,Consensual Union
+,2,"Yes, without a legal basis",22,
+,3,No,23,
+PB205,1,Person living with a legal or de facto partner,24,Partners living in the same household
+,2,Person not living with a legal or de facto partner,25,
+PE010,1,Yes,26,Participation in formal education and training (student or apprentice)
+,2,No,27,
+PE021,0,Early childhood education,28,Level of current/most recent formal education or training activity (ISCED)
+,10,ISCED 1 Primary education,29,
+,20,ISCED 2 Lower secondary education,30,
+,30,ISCED 3 Upper secondary education/ only for persons aged 35 and over,31,
+,34,ISCED 3 Upper secondary education - general/ only for persons aged 16-34,32,
+,35,ISCED 3 Upper secondary education - vocational/ only for persons aged 16-34,33,
+,40,ISCED 4 Post-secondary non-tertiary education/ only for persons aged 35 and over,34,
+,45,ISCED 4 Post-secondary non-tertiary education - vocational/ only for persons aged 16-34,35,
+,60,ISCED 6 Bachelor's or equivalent level,36,
+,70,ISCED 7 Master's or equivalent level,37,
+,80,ISCED 8 Doctoral or equivalent level,38,
+PE041,0,No formal education or below ISCED 1,39,Educational attainment level (ISCED)
+,100,ISCED 1 Primary education,40,
+,200,ISCED 2 Lower secondary education,41,
+,340,ISCED 3 Upper secondary education- general/ only for persons aged 35 and over,42,
+,344,"ISCED 3 Upper secondary education (general) - level completion, with direct access to tertiary education/ only for persons aged 16-34",43,
+,350,ISCED 3 Upper secondary education- vocational/ only for persons aged 35 and over,44,
+,352,"ISCED 3 Upper secondary education (vocational) - partial level completion, without direct access to tertiary education/ only for persons aged 16-34",45,
+,354,"ISCED 3 Upper secondary education (vocational) - level completion, with direct access to tertiary education/ only for persons aged 16-34",46,
+,450,ISCED 4 Post-secondary non-tertiary education - vocational,47,
+,600,ISCED 6 Bachelor's or equivalent level,48,
+,700,ISCED 7 Master's or equivalent level,49,
+,800,ISCED 8 Doctoral or equivalent level,50,
+PH010,1,Very good,51,Self-perceived general health
+,2,Good,52,
+,3,Fair (neither good nor bad),53,
+,4,Bad,54,
+,5,Very bad,55,
+PH020,1,Yes,56,Suffer from any a chronic (long-standing) illness or condition
+,2,No,57,
+PH030,1,Severely limited,58,Limitation in activities because of health problems
+,2,Limited but not severely,59,
+,3,Not limited at all,60,
+PH040,1,"Yes, there was at least one occasion when the person really needed examination or treatment but did not receive it",61,Unmet need for medical examination or treatment
+,2,"No, there was no occasion when the person really needed examination or treatment but did not receive it",62,
+PH050,1,Could not afford to (too expensive),63,Main reason for unmet need for medical examination or treatment
+,2,Waiting list,64,
+,3,"Could not take time because of work, care for children or for others",65,
+,4,Too far to travel/no means of transportation,66,
+,5,Fear of doctor/hospitals/examination/ treatment,67,
+,6,Wanted to wait and see if problem got better on its own,68,
+,7,Did not know any good doctor or specialist,69,
+,8,Other reasons,70,
+PH060,1,"Yes, there was at least one occasion when the person really needed dental examination or treatment but did not receive it",71,Unmet need for dental examination or treatment
+,2,"No, there was no occasion when the person really needed examination or treatment but did not receive it",72,
+PH070,1,Could not afford to (too expensive),73,Main reason for unmet need for dental examination or treatment
+,2,Waiting list,74,
+,3,"Could not take time because of work, care for children or for others",75,
+,4,Too far to travel/no means of transportation,76,
+,5,Fear of doctor(dentist)/hospitals/examination/ treatment,77,
+,6,Wanted to wait and see if problem got better on its own,78,
+,7,Did not know any good dentist,79,
+,8,Other reasons,80,
+PL016,1,Person has never been in employment,81,Existence of previous employment experience
+,2,Person has employment experience limited to occasional work,82,
+,3,Person has employment experience other than occasional work,83,
+PL032,1,Employed,84,Self-defined current economic status
+,2,Unemployed,85,
+,3,Retired,86,
+,4,Unable to work due to long-standing health problems,87,
+,5,"Student, pupil",88,
+,6,Fulfilling domestic tasks,89,
+,7,Compulsory military or civilian service,90,
+,8,Other,91,
+PL040A,1,Self-employed with employees,92,Status in employment (main job)
+,2, Self-employed without employees,93,
+,3,Employee,94,
+,4,Family worker (unpaid),95,
+PL040B,1,Self-employed with employees,96,Status in employment (last job)
+,2, Self-employed without employees,97,
+,3,Employee,98,
+,4,Family worker (unpaid),99,
+PL051A,,,100,Occupation in main job (ISCO-08)
+PL051B,,,101,Occupation (last job) (ISCO-08)
+PL060,,,102,Number of hours usually worked per week in the main job
+PL073,,,103,Number of months spent in full-time work as employee
+PL074,,,104,Number of months spent in part-time work as employee
+PL075,,,105,Number of months spent in full-time work as self-employed (including family worker) 
+PL076,,,106,Number of months spent in part-time work as self-employed (including family worker)
+PL080,,,107,Number of months spent in unemployment
+PL085,,,108,Number of months spent in retirement or early retirement
+PL086,,,109,Number of months unable to work due to long-standing health problems
+PL087,,,110,Number of months spent studying
+PL088,,,111,Number of months spent in compulsory military service
+PL089,,,112,Number of months spent fulfilling domestic tasks 
+PL090,,,113,Number of months spent in other inactivity
+PL100,,,114,"Total number of hours per week usually worked in the second, third,… jobs"
+PL111A,NACE Rev.2 Code,,115,Economic activity of the local unit for the main job
+PL111B,NACE Rev.2 Code,,116,Economic activity of the local unit (last job)
+PL141,11,Fixed-term written contract,117,Permanency of main job
+,12,Fixed-term verbal contract,118,
+,21,Permanent written contract,119,
+,22,Permanent verbal contract,120,
+PL145,1,Full-time job,121,Full or part-time main job (self-defined)
+,2,Part-time job,122,
+PL200,,,123,Number of years spent in paid work (as employee or self-employed)
+PL150,1,Yes,124,Supervisory responsibility in the main job
+,2,No,125,
+PL271,0-99,Number of months,126,Duration of the most recent unemployment spell
+PY010G,,per year,127,"Employee cash or near cash income, gross"
+PY010N,,per year,128,"Employee cash or near cash income, net"
+PY020G,,per year,129,Non-cash employee income
+PY021G,,per year,130,Company car
+PY030G,,per year,131,Employer's social insurance contribution
+PY035G,,per year,132,Contributions to individual private pension plans
+PY050G,,per year,133,"Cash benefits or losses from self-employment, gross"
+PY050N,,per year,134,"Cash benefits or losses from self-employment, net"
+PY080G,,per year,135,Pension from individual private plans
+PY090G,,per year,136,"Unemployment benefits, gross"
+PY090N,,per year,137,"Unemployment benefits, net"
+PY100G,,per year,138,Old-age benefits
+PY110G,,per year,139,Survivor’s benefits
+PY120G,,per year,140,"Sickness benefits, gross"
+PY120N,,per year,141,"Sickness benefits, net"
+PY130G,,per year,142,Disability benefits
+PY140G,,per year,143,Education related allowances
+PD020,1,Yes,144,Replace worn-out clothes by some new (not second-hand) ones
+,2,"No, cannot afford",145,
+,3,"No, other reason",146,
+PD030,1,Yes,147,Two pairs of properly fitting shoes (including a pair of all-weather shoes)
+,2,"No, cannot afford",148,
+,3,"No, other reason",149,
+PD050,1,Yes,150,Get-together with friends/family (relatives) for a drink/meal at least once a month
+,2,"No, cannot afford",151,
+,3,"No, other reason",152,
+PD060,1,Yes,153,Regularly participate in a leisure activity (that costs money)
+,2,"No, cannot afford it",154,
+,3,"No, other reason",155,
+PD070,1,Yes,156,Spend a small amount of money each week on yourself
+,2,"No, cannot afford it",157,
+,3,"No, other reason",158,
+PD080,1,Yes,159,Internet connection for personal use at home when needed
+,2,"No, cannot afford it",160,
+,3,"No, other reason",161,
+AP,1,Alytus county,162,Counties
+,2,Kaunas county,163,
+,3,Klaipėda county,164,
+,4,Marijampolė county,165,
+,5,Panevėžys county,166,
+,6,Šiauliai county,167,
+,7,Tauragė county,168,
+,8,Telšiai county,169,
+,9,Utena county,170,
+,10,Vilnius county,171,
+SL,1,Vilnius,172,Strata
+,2,Kaunas,173,
+,3,Klaipėda,174,
+,4,Šiauliai,175,
+,5,Panevėžys,176,
+,6,Other towns,177,
+,7,Rural,178,
+M_K,1,Urban,179,Urban or rural
+,2,Rural,180,

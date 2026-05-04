@@ -1,0 +1,86 @@
+\begin{thebibliography}{}
+
+\bibitem[Angrist and Pischke, 2009]{angrist2009mostly}
+Angrist, J.~D. and Pischke, J.-S. (2009).
+\newblock {\em Mostly Harmless Econometrics: An Empiricist's Companion}.
+\newblock Princeton University Press, Princeton, NJ.
+
+\bibitem[Baker et~al., 2025]{baker2025did_guide}
+Baker, A., Callaway, B., Cunningham, S., Goodman-Bacon, A., and Sant'Anna, P.
+  H.~C. (2025).
+\newblock Difference-in-differences designs: {A} practitioner’s guide.
+\newblock {\em arXiv preprint arXiv:2503.13323}.
+\newblock Revised June 18, 2025.
+
+\bibitem[Callaway and Sant'Anna, 2021]{callaway2021difference}
+Callaway, B. and Sant'Anna, P.~H. (2021).
+\newblock Difference-in-differences with multiple time periods.
+\newblock {\em Journal of Econometrics}, 225(2):200--230.
+
+\bibitem[Cattaneo et~al., 2019]{cattaneo2019practical}
+Cattaneo, M.~D., Idrobo, N., and Titiunik, R. (2019).
+\newblock A practical introduction to regression discontinuity designs:
+  Foundations.
+\newblock {\em Cambridge Elements: Quantitative and Computational Methods for
+  Social Science}.
+
+\bibitem[Holland, 1986]{holland1986statistics}
+Holland, P.~W. (1986).
+\newblock Statistics and causal inference.
+\newblock {\em Journal of the American Statistical Association},
+  81(396):945--960.
+
+\bibitem[Imbens, 2014]{imbens2014ivperspective}
+Imbens, G.~W. (2014).
+\newblock Instrumental variables: An econometrician’s perspective.
+\newblock {\em Statistical Science}, 29(3):323--358.
+\newblock Also IZA Discussion Paper No.~8048 and NBER Working Paper No.~19983.
+
+\bibitem[Manski, 1989]{Manski1989}
+Manski, C.~F. (1989).
+\newblock Anatomy of the selection problem.
+\newblock {\em The Journal of Human Resources}, 24(3):343--360.
+
+\bibitem[Manski, 1990]{manski1990nonparametric}
+Manski, C.~F. (1990).
+\newblock Nonparametric bounds on treatment effects.
+\newblock {\em American Economic Review}, 80(2):319--323.
+
+\bibitem[Manski, 1995]{manski1995identification}
+Manski, C.~F. (1995).
+\newblock {\em Identification Problems in the Social Sciences}.
+\newblock Harvard University Press, Cambridge, MA.
+
+\bibitem[Manski, 2003]{manski2003partial}
+Manski, C.~F. (2003).
+\newblock {\em Partial Identification of Probability Distributions}.
+\newblock Springer, New York.
+
+\bibitem[Meyersson, 2014]{meyersson2014islamic}
+Meyersson, E. (2014).
+\newblock Islamic rule and the empowerment of the poor and pious.
+\newblock {\em Econometrica}, 82(1):229--269.
+
+\bibitem[Pearl, 1995]{pearl1995causal}
+Pearl, J. (1995).
+\newblock Causal diagrams for empirical research.
+\newblock {\em Biometrika}, 82(4):669--710.
+
+\bibitem[Pearl and Mackenzie, 2018]{pearl2018book}
+Pearl, J. and Mackenzie, D. (2018).
+\newblock {\em The Book of Why: The New Science of Cause and Effect}.
+\newblock Basic Books, New York.
+
+\bibitem[Roth et~al., 2023]{roth2023whats}
+Roth, J., Sant’Anna, P. H.~C., Bilinski, A., and Poe, J. (2023).
+\newblock What’s trending in difference‐in‐differences? a synthesis of
+  the recent econometrics literature.
+\newblock {\em Journal of Econometrics}, 235(2):2218--2244.
+
+\bibitem[Rubin, 1974]{rubin1974}
+Rubin, D.~B. (1974).
+\newblock Estimating causal effects of treatments in randomized and
+  nonrandomized studies.
+\newblock {\em Journal of Educational Psychology}, 66(5):688--701.
+
+\end{thebibliography}

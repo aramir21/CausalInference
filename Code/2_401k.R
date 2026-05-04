@@ -52,6 +52,11 @@ Data <- data.frame(
 )
 
 library(AER)
+reg_ols <- lm(
+  y ~ x + age + inc + fsize + educ + marr + twoearn + db + pira + hown, 
+  data = Data
+)
+summary(reg_ols)
 
 reg_iv <- ivreg(
   y ~ x + age + inc + fsize + educ + marr + twoearn + db + pira + hown |

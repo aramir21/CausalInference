@@ -1,0 +1,8 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {2}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {3}{Identification}{5}{0}{2}
+\beamer@sectionintoc {4}{Randomized controlled trial (RCT)}{9}{0}{3}
+\beamer@sectionintoc {5}{Conditional independence assumption (CIA)}{19}{0}{4}
+\beamer@sectionintoc {6}{Instrumental variables}{27}{0}{5}
+\beamer@sectionintoc {7}{Difference-in-differences design (DiD)}{34}{0}{6}
+\beamer@sectionintoc {8}{Regression discontinuity design (RD)}{51}{0}{7}
