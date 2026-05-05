@@ -11,14 +11,6 @@ library(TeachingDemos)
 options(width=280)
 par(mar = rep(2, 4))
 
-# A folder called "outputs" needs to be created in order to store 
-# all of the figures, logs and tables. If the folder already exists,
-# the user will get an error message but the code will not stop.
-# tryCatch(dir.create("outputs"))
-
-# Tables 1, 2, 4, 5, and 6 are only constructed in STATA
-# Figures 20, 21, and 22 are only constructed in STATA
-
 # Loading the data and defining the main variables
 data = read.dta("CIT_2019_Cambridge_polecon.dta")
 Y = data$Y # Percentage of young women who complete high school by 2000
@@ -26,6 +18,8 @@ X = data$X # Percentage Islamic margin victory for Mayoral elections in 1994
 T = data$T # Treated = 1 (Islamic mayor)
 T_X = T*X
 
+rdplot(Y, X,
+       x.label = "Score", y.label = "", title = "")
 
 # R Snippet 12
 # Using rdrobust with uniform weights
@@ -70,17 +64,11 @@ rdplot(data$partycount, X,
 out = rdrobust(data$lpop1994, X)
 summary(out)
 
-# Formal continuity-based analysis for covariates using CER-optimal bandwidth (not reported in the text)
+# Formal continuity-based analysis for covariates using MSE-optimal bandwidth 
 summary(rdrobust(data$lpop1994, X, bwselect = 'mserd'))
 
 # R Snippet 30
 # Using rdplot to show the rdrobust effect for lpop1994
-bandwidth = rdrobust(data$lpop1994, X)$bws[1,1]
-xlim = ceiling(bandwidth)
-rdplot(data$lpop1994[abs(X) <= bandwidth], X[abs(X) <= bandwidth],
-       p = 1, kernel = 'triangular', x.lim = c(-xlim, xlim), x.label = "Score",
-       y.label = "", title = "")
-
 # Figure 17
 # Graphical illustration of local linear RD effects for predetermined covariates
 bandwidth = rdrobust(data$lpop1994, X)$bws[1,1]
@@ -89,14 +77,34 @@ rdplot(data$lpop1994[abs(X) <= bandwidth], X[abs(X) <= bandwidth],
        p = 1, kernel = 'triangular', x.lim = c(-xlim, xlim), x.label = "Score",
        y.label = "", title = "")
 
+
+
 # R Snippet 31
 # Binomial test
+# a simple Bernoulli test within that neighborhood with a probability of \success" equal to 1/2.
+# This strategy tests whether the number of treated observations in the chosen neighborhood is
+# compatible with what would have been observed if units had been assigned to the treatment
+# group (i.e., to being above the cuto) with a 50% probability. The test is finite sample exact,
+# under the assumptions imposed.
 binom.test(53, 100, 1/2)
 
 # R Snippet 32
 # Using rddensity
+# A complementary approach is to conduct a test of the null hypothesis that the density of
+# the running variable is continuous at the cutoff, which fits naturally into the continuity-based
+# framework adopted in this Element. The implementation of this test requires the estimation
+# of the density of observations near the cutoff, separately for observations above and below the
+# cutoff. We employ here an implementation based on a local polynomial density estimator
+# that does not require pre-binning of the data and leads to size and power improvements
+# relative to other approaches. The null hypothesis is that there is no \manipulation" of the
+# density at the cutoff, formally stated as continuity of the density functions for control and
+# treatment units at the cutoff. Therefore, failing to reject implies that there is no statistical
+# evidence of manipulation at the cutoff, and offers evidence supporting the validity of the RD
+# design.
 out = rddensity(X)
 summary(out)
+# No rejection of the null hypothesis of no differences in
+# the density of treated and control observations at the cutoff
 
 # Figure 19a
 # Histogram
